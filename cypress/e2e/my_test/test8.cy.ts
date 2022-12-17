@@ -1,4 +1,3 @@
-import { UrlUnsplash } from "../../fixtures/urlUnsplash";
 import { unsplashSelectors } from "../../selectors/unsplashSelectors";
 
 describe("Displaying internal elements of a photo", () => {
