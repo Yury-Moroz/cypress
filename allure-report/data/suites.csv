@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Dec 19 13:05:41 MSK 2022","Mon Dec 19 13:05:52 MSK 2022","10211","","Assert","","","","assert web test",""
+"passed","Mon Dec 19 13:06:20 MSK 2022","Mon Dec 19 13:06:20 MSK 2022","881","","test API Swapi","","","","get test",""
+"passed","Mon Dec 19 13:05:22 MSK 2022","Mon Dec 19 13:05:28 MSK 2022","5854","","checking the operation of the header","","","","open street photography",""
+"failed","Mon Dec 19 13:06:48 MSK 2022","Mon Dec 19 13:07:00 MSK 2022","12108","","Displaying internal elements of a photo","","","","Checking the like element and the download element",""
+"passed","Mon Dec 19 13:06:31 MSK 2022","Mon Dec 19 13:06:36 MSK 2022","5440","","test input","","","","open street photography",""
+"passed","Mon Dec 19 13:04:49 MSK 2022","Mon Dec 19 13:05:09 MSK 2022","19201","","my first test","","","","open unsplash",""
+"passed","Mon Dec 19 13:07:13 MSK 2022","Mon Dec 19 13:07:18 MSK 2022","5332","","Assert","","","","Scroll",""
