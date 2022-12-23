@@ -1,3 +1,8 @@
 .idea/
-node_modules/QA
 node_modules/
+
+cypress/screenshots
+cypress/videos
+
+allure-report
+allure-results
