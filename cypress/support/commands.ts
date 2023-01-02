@@ -47,7 +47,15 @@ export {};
 declare global {
   namespace Cypress {
     interface Chainable {
-      start(): void;
+      pageOpen(): void;
+    }
+  }
+}
+export {};
+declare global {
+  namespace Cypress {
+    interface Chainable {
+      beVisible(): void;
     }
   }
 }

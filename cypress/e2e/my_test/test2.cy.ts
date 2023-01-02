@@ -1,12 +1,9 @@
 import { unsplashSelectors } from "../../selectors/unsplashSelectors";
-import { Login } from "../../fixtures/login";
-import { Password } from "../../fixtures/pasword";
-describe("my first test", () => {
-  it("open unsplash", () => {
-    cy.start();
-    cy.contains("Log in").click();
-    cy.get(unsplashSelectors.email).type(Login.LOGIN_PAGE);
-    cy.get(unsplashSelectors.password).type(Password.PASSWORD_PAGE);
-    cy.get(unsplashSelectors.clickLogin).click();
+
+describe("checking the operation of the header", () => {
+  it("open street photography", () => {
+    cy.pageOpen();
+    cy.get(unsplashSelectors.streetPhotoHeader).should("be.visible").click();
+    cy.get(unsplashSelectors.streetPhoto).should("have.text", "Street Photography");
   });
 });

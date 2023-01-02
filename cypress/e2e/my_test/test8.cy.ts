@@ -1,11 +1,11 @@
 import { unsplashSelectors } from "../../selectors/unsplashSelectors";
-
-describe("Displaying internal elements of a photo", () => {
-  it("Checking the like element and the download element", () => {
-    cy.start();
-    cy.get(unsplashSelectors.search).type("Car{enter}");
-    cy.get(unsplashSelectors.searchCar).click();
-    cy.get(unsplashSelectors.searchCarDownload).should("be.visible");
-    cy.get(unsplashSelectors.searchCarLike).should("be.visible");
-  });
+import { Login } from "../../fixtures/login";
+describe("my negative test", () => {
+    it("login to personal account by one field login", () => {
+        cy.pageOpen();
+        cy.contains("Log in").click();
+        cy.get(unsplashSelectors.email).type(Login.LOGIN_PAGE);
+        cy.get(unsplashSelectors.clickLogin).click();
+        cy.get(unsplashSelectors.incorrectlyEnteredData).should("have.text","\n            Invalid email or password.\n          ")
+    });
 });

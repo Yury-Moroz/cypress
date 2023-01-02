@@ -1,11 +1,11 @@
 import { unsplashSelectors } from "../../selectors/unsplashSelectors";
 
-describe("Assert", () => {
-  it("Scroll", () => {
-    cy.start();
-    cy.get(unsplashSelectors.search).type("Car{enter}");
-    cy.get(unsplashSelectors.car).should("have.text", "Car");
-    cy.scrollTo(0, 4500);
-    cy.get(unsplashSelectors.searchCar).click();
-  });
-});
+describe("Displaying internal elements of a photo", () => {
+    it("Checking the like element and the download element", () => {
+        cy.pageOpen();
+        cy.get(unsplashSelectors.search).type("Car{enter}");
+        cy.get(unsplashSelectors.searchCar).click();
+        cy.get(unsplashSelectors.searchCarDownload).should("be.visible");
+        cy.get(unsplashSelectors.searchCarLike).should("be.visible");
+    });
+})

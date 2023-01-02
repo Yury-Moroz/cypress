@@ -1,9 +1,16 @@
 import { unsplashSelectors } from "../../selectors/unsplashSelectors";
+import { Login } from "../../fixtures/login";
+import { Password } from "../../fixtures/pasword";
 
-describe("checking the operation of the header", () => {
-  it("open street photography", () => {
-    cy.start();
-    cy.get(unsplashSelectors.streetPhotoHeader).should("be.visible").click();
-    cy.get(unsplashSelectors.streetPhoto).should("have.text", "Street Photography");
+describe("Assert", () => {
+  it("assert web test", () => {
+    cy.pageOpen();
+    cy.location("protocol").should("equal", "https:");
+    cy.title().should("equal", "Beautiful Free Images & Pictures | Unsplash");
+    cy.get(unsplashSelectors.btnLogin).should("be.visible").click();
+    cy.get(unsplashSelectors.email).type(Login.LOGIN_PAGE).should("have.value", Login.LOGIN_PAGE);
+    cy.get(unsplashSelectors.password).type(Password.PASSWORD_PAGE).should("have.value", Password.PASSWORD_PAGE);
+    cy.get(unsplashSelectors.clickLogin).should("be.visible").click();
+    cy.contains("Invalid email or password.").should("be.visible");
   });
 });

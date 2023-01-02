@@ -6,3 +6,5 @@ cypress/videos
 
 allure-report
 allure-results
+
+cypress/e2e/my_test/test666.cy.ts
