@@ -12,7 +12,4 @@ Cypress.Commands.add("pageOpen", () => {
   cy.viewport(1920, 1080);
 });
 
-Cypress.Commands.add("beVisible", () => {
-  cy.get("").should("be.visible")
 
-})

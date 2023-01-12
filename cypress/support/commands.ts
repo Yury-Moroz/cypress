@@ -40,22 +40,7 @@ declare global {
   namespace Cypress {
     interface Chainable {
       searchСheckWords(text: string): void;
-    }
-  }
-}
-export {};
-declare global {
-  namespace Cypress {
-    interface Chainable {
       pageOpen(): void;
-    }
-  }
-}
-export {};
-declare global {
-  namespace Cypress {
-    interface Chainable {
-      beVisible(): void;
     }
   }
 }
