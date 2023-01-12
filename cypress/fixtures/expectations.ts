@@ -10,7 +10,6 @@ export class Expectations {
     invalidEmail = "\n            Invalid email or password.\n          ";
     invalidPassword = "\n            You need to sign in or sign up before continuing.\n          ";
     caramba ="Carambaramba{enter}";
-    photoUsers = "PhotosCollectionsUsers";
     ooo = "000";
     carLowerCase = "car";
     incorrectConfig = "\n            You need to sign in or sign up before continuing.\n          ";
